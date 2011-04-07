@@ -18,10 +18,7 @@ class google_analytics {
 
     public function runLevel($level){
         if ($level == 5){
-            $ini = moduleLoader::getModuleIniSettings('google_analytics');
-            if (empty($ini['google_ac'])){
-                return;
-            }
+            $code = get_module_ini('google_analytics_code');
             $str = <<<EOD
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -29,7 +26,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 </script>
 <script type="text/javascript">
 try {
-var pageTracker = _gat._getTracker("{$ini['google_ac']}");
+var pageTracker = _gat._getTracker("$code");
 pageTracker._trackPageview();
 } catch(err) {}</script>
 EOD;
