@@ -20,7 +20,8 @@ class google_analytics {
         if ($level == 5){
             $code = get_module_ini('google_analytics_code');
             $google_js = _COS_PATH . "/modules/google_analytics/google.js";
-            template::setInlineJs($google_js, 10000, 'google_analytics_code', $code);
+            str_replace('google_analytics_code', $code, $google_js);
+            template::setInlineJs($google_js, 10000, array ('no_cache' => 1));
         }
     }
 }
