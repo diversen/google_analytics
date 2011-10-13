@@ -6,7 +6,7 @@ $_INSTALL['VERSION'] = 1.31;
 
 $_INSTALL['MAIN_MENU_ITEM'] = array (
     'title' => 'google_analytics_main_menu_title',
-    'url' => '/google_analytics/index',
+    'url' => '/google_analytics/config/index',
     'module_name' => 'google_analytics',
     'parent' => 0,
     'weight' => 1,
