@@ -28,7 +28,10 @@ class google_analytics {
                 $google_js, 
                 // load last or close to. 
                 10000, 
-                array ('no_cache' => 1, 'search' => $search, 'replace' => $replace));
+                array ('no_cache'   => 1, 
+                       'search'     => $search, 
+                       'replace'    => $replace)
+            );
         }
     }
 }
