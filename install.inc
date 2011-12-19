@@ -2,7 +2,7 @@
 
 
 $_INSTALL['RUN_LEVEL'] = "0,5";
-$_INSTALL['VERSION'] = 1.31;
+$_INSTALL['VERSION'] = 1.41;
 
 $_INSTALL['MAIN_MENU_ITEM'] = array (
     'title' => 'google_analytics_main_menu_title',
