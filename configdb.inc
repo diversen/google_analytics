@@ -7,3 +7,5 @@ $db_config = array (
            'value' => 'UA-XXXXXXX-X',
            'auth' => 'admin'),
 );
+
+//$db_config_menu = true;
