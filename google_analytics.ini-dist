@@ -1,0 +1,4 @@
+;used if we want to set google analytics for a range of subsites
+google_analytics_disable_menu = 1
+; used for multi domains - else google analytics is set in database
+google_analytics_code_override = ''
