@@ -18,6 +18,13 @@ class google_analytics {
 
     public function runLevel($level){
         if ($level == 5){
+            $webmaster = config::getModuleIni('google_analytics_webmaster_code');
+            if (!empty($webmaster)) {
+                $ary = array ('google-site-verification' => $webmaster);
+                template::setMeta($ary);
+            }
+            
+            
             $code = html::specialEncode(config::getModuleIni('google_analytics_code'));
             $override = config::getModuleIni('google_analytics_code_override');
             
@@ -30,9 +37,7 @@ class google_analytics {
                 $domain = '';
                 $google_js = _COS_PATH . "/modules/google_analytics/google.js";
             }
-            //str_replace('google_analytics_code', $code, $google_js);
-            
-            //$search = 'google_analytics_code';
+            //velKWzYd5Td2vvUzhdzx9lMutXZBpR8aw4cXKjG5MNM
             $replace = array($code, $domain);
             template::setInlineJs(
                 $google_js, 
