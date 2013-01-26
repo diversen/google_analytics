@@ -1,5 +1,6 @@
 <?php
 
+include_once "coslib/config.php";
 /**
  * model file add google analytics to page
  *
