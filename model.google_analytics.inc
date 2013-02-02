@@ -1,6 +1,5 @@
 <?php
 
-include_once "coslib/config.php";
 /**
  * model file add google analytics to page
  *
@@ -33,10 +32,10 @@ class google_analytics {
             if (isset($override)) {
                 $code = $override;
                 $domain = config::getModuleIni('google_analytics_domain');
-                $google_js = _COS_PATH . "/modules/google_analytics/google_multi.js";
+                $google_js = _COS_PATH . '/' . _COS_MOD_DIR . '/google_analytics/google_multi.js';
             } else {
                 $domain = '';
-                $google_js = _COS_PATH . "/modules/google_analytics/google.js";
+                $google_js = _COS_PATH . '/' . _COS_MOD_DIR . '/google_analytics/google.js';
             }
             //velKWzYd5Td2vvUzhdzx9lMutXZBpR8aw4cXKjG5MNM
             $replace = array($code, $domain);
