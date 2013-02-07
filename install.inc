@@ -2,14 +2,14 @@
 
 
 $_INSTALL['RUN_LEVEL'] = "0,5";
-$_INSTALL['VERSION'] = 1.70;
+$_INSTALL['VERSION'] = 1.71;
 
 $disable_menu = config::getModuleIni('google_analytics_disable_menu');
 if (!$disable_menu) {
     $_INSTALL['MAIN_MENU_ITEM'] = array (
         'title' => 'google_analytics_main_menu_title',
-        'url' => '/google_analytics/config/index',
-        'module_name' => 'google_analytics',
+        'url' => '/googleanalytics/config/index',
+        'module_name' => 'googleanalytics',
         'parent' => 0,
         'weight' => 1,
         'auth' => 'admin',
