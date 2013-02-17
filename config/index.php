@@ -1,3 +1,3 @@
 <?php
 
-configdb::displayConfig('googleanalytics');
+configdb::displayConfig('google_analytics');

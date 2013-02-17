@@ -8,8 +8,8 @@ $disable_menu = config::getModuleIni('google_analytics_disable_menu');
 if (!$disable_menu) {
     $_INSTALL['MAIN_MENU_ITEM'] = array (
         'title' => 'google_analytics_main_menu_title',
-        'url' => '/googleanalytics/config/index',
-        'module_name' => 'googleanalytics',
+        'url' => '/google_analytics/config/index',
+        'module_name' => 'google_analytics',
         'parent' => 0,
         'weight' => 1,
         'auth' => 'admin',
