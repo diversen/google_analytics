@@ -2,7 +2,7 @@
 
 
 $_INSTALL['RUN_LEVEL'] = "0,5";
-$_INSTALL['VERSION'] = 1.81;
+$_INSTALL['VERSION'] = 2.1;
 
 $disable_menu = config::getModuleIni('google_analytics_disable_menu');
 if (!$disable_menu) {
