@@ -1,6 +1,4 @@
 <?php
 
-$_COS_LANG_MODULE['google_analytics_main_menu_title'] = 'Google analytics';
-$_COS_LANG_MODULE['google_analytics_code'] = 'Google analytics kode';
+$_COS_LANG_MODULE['google_analytics_config_description'] = 'Google Analytics';
 $_COS_LANG_MODULE['google_analytics_webmaster_code'] = 'Webmaster kode';
-$_COS_LANG_MODULE['googleanalytics_config_description'] = 'Google analytics';
