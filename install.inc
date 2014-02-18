@@ -7,7 +7,7 @@ $_INSTALL['VERSION'] = 2.41;
 $disable_menu = config::getModuleIni('google_analytics_disable_menu');
 if (!$disable_menu) {
     $_INSTALL['MAIN_MENU_ITEM'] = array (
-        'title' => 'google_analytics_main_menu_title',
+        'title' => lang::translate('Google analytics', null, array('no_translate'=>true)),
         'url' => '/google_analytics/config/index',
         'module_name' => 'google_analytics',
         'parent' => 0,
