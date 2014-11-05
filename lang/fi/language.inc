@@ -1,4 +1,4 @@
 <?php
 
-$_COS_LANG_MODULE['google_analytics_code'] = 'Google Analytics-koodi';
-$_COS_LANG_MODULE['google_analytics_webmaster_code'] = 'Webmaster vahvistuskoodi';
+$_COS_LANG_MODULE['Google analytics code'] = 'Google Analytics-koodi';
+$_COS_LANG_MODULE['Google webmaster code'] = 'Google webmaster koodi';
