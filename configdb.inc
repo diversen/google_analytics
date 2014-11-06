@@ -12,5 +12,3 @@ $db_config = array (
            'value' => '',
            'auth' => 'admin'),
 );
-
-//$db_config_menu = true;
