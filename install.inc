@@ -4,7 +4,7 @@
 $_INSTALL['RUN_LEVEL'] = "0,5";
 $_INSTALL['VERSION'] = 3.01;
 
-$disable_menu = config::getModuleIni('google_analytics_disable_menu');
+$disable_menu = conf::getModuleIni('google_analytics_disable_menu');
 if (!$disable_menu) {
     $_INSTALL['MAIN_MENU_ITEM'] = array (
         'title' => lang::translate('Google analytics', null, array('no_translate'=>true)),

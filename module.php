@@ -18,20 +18,20 @@ class google_analytics {
 
     public function runLevel($level){
         if ($level == 5){
-            $webmaster = config::getModuleIni('google_analytics_webmaster_code');
+            $webmaster = conf::getModuleIni('google_analytics_webmaster_code');
             if (!empty($webmaster)) {
                 $ary = array ('google-site-verification' => $webmaster);
                 template::setMeta($ary);
             }
             
             
-            $code = html::specialEncode(config::getModuleIni('google_analytics_code'));
-            $override = config::getModuleIni('google_analytics_code_override');
+            $code = html::specialEncode(conf::getModuleIni('google_analytics_code'));
+            $override = conf::getModuleIni('google_analytics_code_override');
             
             $search = array ('google_analytics_code', 'google_analytics_domain');
             if (isset($override)) {
                 $code = $override;
-                $domain = config::getModuleIni('google_analytics_domain');
+                $domain = conf::getModuleIni('google_analytics_domain');
                 $google_js = _COS_PATH . '/' . _COS_MOD_DIR . '/google_analytics/google_multi.js';
             } else {
                 $domain = '';
