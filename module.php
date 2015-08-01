@@ -3,6 +3,8 @@
 use diversen\template;
 use diversen\conf;
 use diversen\html;
+
+
 /**
  * model file add google analytics to page
  *

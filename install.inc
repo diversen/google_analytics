@@ -1,5 +1,7 @@
 <?php
 
+use diversen\conf;
+use diversen\lang;
 
 $_INSTALL['RUN_LEVEL'] = "0,5";
 $_INSTALL['VERSION'] = 3.01;

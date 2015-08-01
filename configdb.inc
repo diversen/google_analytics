@@ -1,5 +1,6 @@
 <?php
 
+use diversen\lang;
 $db_config = array (
     array ('name' => 'google_analytics_code', 
            'description' => lang::translate('Google analytics code'),
