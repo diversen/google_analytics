@@ -1,8 +1,8 @@
 <?php
 
-use diversen\template;
 use diversen\conf;
 use diversen\html;
+use diversen\template;
 
 
 /**
