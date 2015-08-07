@@ -4,7 +4,7 @@ use diversen\conf;
 use diversen\lang;
 
 $_INSTALL['RUN_LEVEL'] = "0,5";
-$_INSTALL['VERSION'] = 3.01;
+$_INSTALL['VERSION'] = 4.01;
 
 $disable_menu = conf::getModuleIni('google_analytics_disable_menu');
 if (!$disable_menu) {
