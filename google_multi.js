@@ -1,7 +1,7 @@
   
     var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'google_analytics_code']);
-  _gaq.push(['_setDomainName', 'google_analytics_domain']);
+  _gaq.push(['_setAccount', 'analytics_code']);
+  _gaq.push(['_setDomainName', 'analytics_domain']);
   _gaq.push(['_trackPageview']);
 
   (function() {

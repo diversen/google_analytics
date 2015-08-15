@@ -1,5 +1,6 @@
 <?php
 
+namespace modules\analytics;
 use diversen\conf;
 use diversen\html;
 use diversen\template;
@@ -8,39 +9,39 @@ use diversen\template;
 /**
  * model file add google analytics to page
  *
- * @package    google_analytics
+ * @package    analytics
  */
 
 /**
  * path class implements runlevel 5
  *
- * @package    google_analytics
+ * @package    analytics
  */
-class google_analytics {
+class module {
     /**
      * constructor of cache model
      */
 
     public function runLevel($level){
         if ($level == 5){
-            $webmaster = conf::getModuleIni('google_analytics_webmaster_code');
+            $webmaster = conf::getModuleIni('analytics_webmaster_code');
             if (!empty($webmaster)) {
                 $ary = array ('google-site-verification' => $webmaster);
                 template::setMeta($ary);
             }
             
             
-            $code = html::specialEncode(conf::getModuleIni('google_analytics_code'));
-            $override = conf::getModuleIni('google_analytics_code_override');
+            $code = html::specialEncode(conf::getModuleIni('analytics_code'));
+            $override = conf::getModuleIni('analytics_code_override');
             
-            $search = array ('google_analytics_code', 'google_analytics_domain');
+            $search = array ('analytics_code', 'analytics_domain');
             if (isset($override)) {
                 $code = $override;
-                $domain = conf::getModuleIni('google_analytics_domain');
-                $google_js = conf::pathModules() . '/google_analytics/google_multi.js';
+                $domain = conf::getModuleIni('analytics_domain');
+                $google_js = conf::pathModules() . '/analytics/google_multi.js';
             } else {
                 $domain = '';
-                $google_js = conf::pathModules() . '/google_analytics/google.js';
+                $google_js = conf::pathModules() . '/analytics/google.js';
             }
             //velKWzYd5Td2vvUzhdzx9lMutXZBpR8aw4cXKjG5MNM
             $replace = array($code, $domain);

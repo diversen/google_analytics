@@ -1,6 +1,6 @@
 ;used if we want to set google analytics for a range of subsites
-google_analytics_disable_menu = 0
+analytics_disable_menu = 0
 ; used for multi domains - else google analytics is set in database
-google_analytics_code_override = ''
+analytics_code_override = ''
 ; web master code 
-google_analytics_webmaster_code = ''
+analytics_webmaster_code = ''
