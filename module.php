@@ -1,6 +1,7 @@
 <?php
 
 namespace modules\analytics;
+
 use diversen\conf;
 use diversen\html;
 use diversen\template;
@@ -29,8 +30,7 @@ class module {
                 $ary = array ('google-site-verification' => $webmaster);
                 template::setMeta($ary);
             }
-            
-            
+                      
             $code = html::specialEncode(conf::getModuleIni('analytics_code'));
             $override = conf::getModuleIni('analytics_code_override');
             
@@ -38,12 +38,12 @@ class module {
             if (isset($override)) {
                 $code = $override;
                 $domain = conf::getModuleIni('analytics_domain');
-                $google_js = conf::pathModules() . '/analytics/google_multi.js';
+                $google_js = conf::pathModules() . '/analytics/assets/google_multi.js';
             } else {
                 $domain = '';
-                $google_js = conf::pathModules() . '/analytics/google.js';
+                $google_js = conf::pathModules() . '/analytics/assets/google.js';
             }
-            //velKWzYd5Td2vvUzhdzx9lMutXZBpR8aw4cXKjG5MNM
+
             $replace = array($code, $domain);
             template::setInlineJs(
                 $google_js, 
