@@ -1,8 +1,8 @@
-### About
+# About
 
 This is module for adding the google analytics to your site. 
 
-### Configuration
+# Configuration
 
     ; disable web configuration
     analytics_disable_menu = 0
