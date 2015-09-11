@@ -5,7 +5,7 @@ $LANG = array();
 // Translation of file modules/analytics/install.inc
 
 $LANG['Google analytics'] = 'Google analytics';
-// Translation of file modules/analytics/configdb.inc
+// Translation of file modules/analytics/config/module.php
 
 $LANG['Google analytics code'] = 'Google analytics code';
 $LANG['Google webmaster code'] = 'Google webmaster code';
