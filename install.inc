@@ -19,5 +19,3 @@ if (!$disable_menu) {
     );
 }
 
-$_INSTALL['PUBLIC_CLONE_URL'] = 'git://github.com/diversen/analytics.git';
-$_INSTALL['PRIVATE_CLONE_URL'] = 'git@github.com:diversen/analytics.git';
