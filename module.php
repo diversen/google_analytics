@@ -5,6 +5,7 @@ namespace modules\analytics;
 use diversen\conf;
 use diversen\html;
 use diversen\template;
+use diversen\template\assets;
 
 
 /**
@@ -45,7 +46,7 @@ class module {
             }
 
             $replace = array($code, $domain);
-            template::setInlineJs(
+            assets::setInlineJs(
                 $google_js, 
                 // load last or close to. 
                 10000, 
