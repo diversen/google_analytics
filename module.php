@@ -9,16 +9,9 @@ use diversen\template\assets;
 
 
 /**
- * model file add google analytics to page
- *
- * @package    analytics
+ * Module that runs the analytics code after normal loading of ini settings
  */
 
-/**
- * path class implements runlevel 5
- *
- * @package    analytics
- */
 class module {
     /**
      * constructor of cache model
@@ -33,19 +26,10 @@ class module {
             }
                       
             $code = html::specialEncode(conf::getModuleIni('analytics_code'));
-            $override = conf::getModuleIni('analytics_code_override');
-            
-            $search = array ('analytics_code', 'analytics_domain');
-            if (isset($override)) {
-                $code = $override;
-                $domain = conf::getModuleIni('analytics_domain');
-                $google_js = conf::pathModules() . '/analytics/assets/google_multi.js';
-            } else {
-                $domain = '';
-                $google_js = conf::pathModules() . '/analytics/assets/google.js';
-            }
+            $search = array ('analytics_code');
 
-            $replace = array($code, $domain);
+            $google_js = conf::pathModules() . '/analytics/assets/google.js';
+            $replace = array($code);
             assets::setInlineJs(
                 $google_js, 
                 // load last or close to. 
